@@ -1,0 +1,69 @@
+.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.title {
+  grid-column: 2;
+  text-align: right;
+}
+
+.price {
+  place-self: start end;
+}
+
+.buy {
+  align-self: center;
+  text-align: center;
+}
+
+.description {
+  text-align: right;
+}
+
+/* General */
+
+body {
+  font-family: Arial;
+  margin: 40px;
+}
+
+h1,
+p {
+  margin: 0px;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 1;
+}
+
+p {
+  font-size: 20px;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.buy {
+  background: #a8f;
+  color: #103;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.grid {
+  display: grid;
+}
+
+.price {
+  background: #ddd;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
