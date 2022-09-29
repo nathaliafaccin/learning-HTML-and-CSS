@@ -93,6 +93,11 @@ p {
   font-size: 2rem;
 }
 
+.info-cover img {
+  height: 100%;
+  object-fit: cover;
+}
+
 .button {
   background: #ee2211;
   color: #fff;
@@ -145,4 +150,45 @@ p {
   text-align: center;
   padding: 40px;
   box-sizing: border-box;
+}
+
+@media (max-width: 1000px) {
+  .content-benefits {
+    grid-template-columns: 1fr;
+  }
+  .subtitle {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    gap: 30px;
+    margin-top: 20px;
+  }
+  header {
+    gap: 30px;
+  }
+  .content {
+    grid-template-columns: 1fr;
+  }
+  .info {
+    text-align: left;
+    justify-items: start;
+  }
+  .info::before {
+    display: none;
+  }
+  .subtitle {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .subtitle {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1rem;
+  }
 }
